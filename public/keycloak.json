@@ -1,0 +1,8 @@
+{
+  "realm": "Nestjs_Demo",
+  "auth-server-url": "http://localhost:8080/auth/",
+  "ssl-required": "external",
+  "resource": "reactjs_client",
+  "public-client": true,
+  "confidential-port": 0
+}
