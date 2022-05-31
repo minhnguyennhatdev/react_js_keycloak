@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { allBooks } from '../modules/books';
+import { allBooks } from '../modules/book/books';
 
 const BookDetails = () => {
 

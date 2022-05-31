@@ -9,24 +9,24 @@ import SecretBooks from "./SecretBooks";
 
 const BookBox = () => (
   <>
-    <Menu/>
-    <Switch>
-      <Route exact path="/">
-        <BookList/>
-      </Route>
-      <Route exact path="/books/new">
-        <BookForm/>
-      </Route>
-      <Route path="/books/:bookId">
-        <BookDetails/>
-      </Route>
-      <RolesRoute path="/secret" roles={['admin']}>
-        <SecretBooks/>
-      </RolesRoute>
-      <Route path="*">
-        <NoMatch/>
-      </Route>
-    </Switch>
+      <Menu/>
+      <Switch>
+        <Route exact path="/">
+          <BookList/>
+        </Route>
+        <Route exact path="/books/new">
+          <BookForm/>
+        </Route>
+        <Route path="/books/:bookId">
+          <BookDetails/>
+        </Route>
+        <RolesRoute path="/secret" roles={['reactjs_admin']}>
+          <SecretBooks/>
+        </RolesRoute>
+        <Route path="*">
+          <NoMatch/>
+        </Route>
+      </Switch>
   </>
 )
 

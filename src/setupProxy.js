@@ -5,4 +5,10 @@ module.exports = function(app) {
     target: 'https://erah07zkak.execute-api.eu-central-1.amazonaws.com',
     changeOrigin: true
   }));
+
+  app.use('/server', createProxyMiddleware({
+    target: 'http://localhost:3001',
+    changeOrigin: true
+  }));
+
 };

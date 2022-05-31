@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { allBooks, deleteBook } from "../modules/books";
+import { allBooks, deleteBook } from "../modules/book/books";
 
 const BookList = () => {
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router";
-import { addBook } from "../modules/books";
+import { addBook } from "../modules/book/books";
 import RenderOnRole from "./RenderOnRole";
 
 const BookForm = () => {

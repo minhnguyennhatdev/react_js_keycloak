@@ -37,7 +37,7 @@ const updateToken = (successCallback) =>
 
 const getUsername = () => _kc.tokenParsed?.preferred_username;
 
-const hasRole = (roles) => roles.some((role) => _kc.hasRealmRole(role));
+const hasRole = (roles) => roles.some((role) => _kc.hasResourceRole(role));
 
 const UserService = {
   initKeycloak,

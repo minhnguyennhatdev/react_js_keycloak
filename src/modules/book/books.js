@@ -1,6 +1,6 @@
 import { SUCCESS_SUFFIX } from "redux-axios-middleware";
-import HttpService from "../services/HttpService";
-import UserService from "../services/UserService";
+import HttpService from "../../services/HttpService";
+import UserService from "../../services/UserService";
 
 const LIST_BOOKS = 'LIST_BOOKS';
 const ADD_BOOK = 'ADD_BOOK';
