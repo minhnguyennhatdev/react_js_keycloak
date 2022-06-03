@@ -30,7 +30,7 @@ const BookList = () => {
             <tr key={book.id}>
               <td>{book.id}</td>
               <td>
-                <Link to={`/books/${book.id}`}>{book.title}</Link>
+                <Link to={`/books/${book.id}`}>{book.name}</Link>
               </td>
               <td>{book.author}</td>
               <td>

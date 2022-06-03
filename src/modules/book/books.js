@@ -1,4 +1,5 @@
 import { SUCCESS_SUFFIX } from "redux-axios-middleware";
+import { serverUrl } from "../../constants/urls";
 import HttpService from "../../services/HttpService";
 import UserService from "../../services/UserService";
 
@@ -9,7 +10,7 @@ const DELETE_BOOK = 'DELETE_BOOK';
 const booksReducer = (state = [], action) => {
   switch (action.type) {
     case LIST_BOOKS + SUCCESS_SUFFIX:
-      return action.payload.data;
+      return action.payload.data.data;
 
     case DELETE_BOOK:
       return state.filter((book) => book.id !== action.payload.book.id);
@@ -25,7 +26,8 @@ export const allBooks = () => ({
   type: LIST_BOOKS,
   payload: {
     request: {
-      url: '/demo/books',
+      // url: '/demo/books',
+      url: `${serverUrl}/api/books`,
     },
   },
 });

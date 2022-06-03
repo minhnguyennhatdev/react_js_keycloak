@@ -5,6 +5,7 @@ import StoreService from "../services/StoreService";
 import RenderOnAnonymous from "./RenderOnAnonymous";
 import RenderOnAuthenticated from "./RenderOnAuthenticated";
 import Welcome from "./Welcome";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const store = StoreService.setup();
 

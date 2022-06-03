@@ -1,0 +1,2 @@
+export const GET_BOOKS = 'GET_BOOKS'
+export const IS_AUTHENTICATED = 'IS_AUTHENTICATED'
